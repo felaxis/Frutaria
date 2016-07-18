@@ -16,9 +16,9 @@ public class controleDeEstoqueParaFrutaria {
 	}
 
 	private static void mensagensIniciais() {
-		System.out.println("\n\n\n                    CONTROLE DE ESTOQUE FRUTARIA DO SEU ZÉ");
+		System.out.println("\n\n\n                    CONTROLE DE ESTOQUE FRUTARIA DO SEU PEDRO");
 		System.out.println("-------------------------------------------------------------------------------\n");
-		System.out.println("\nINSIRA A AÇÃO DESEJADA:\n");
+		System.out.println("\nINSIRA A ESCOLHA DESEJADA:\n");
 		System.out.print("\nPara INSERIR algum item, digite 1 / Para RETIRADA, digite 2: \n");
 	}
 
@@ -40,7 +40,7 @@ public class controleDeEstoqueParaFrutaria {
 
 	private static void inserirProdutoNoEstoque() {
 
-		System.out.print("Insira o Código do Produto:  ");
+		System.out.print("Insira o Codigo do Produto:  ");
 		int codigoDoProduto = entrada.nextInt();
 		
 		bancoDeDados(codigoDoProduto);
@@ -51,7 +51,7 @@ public class controleDeEstoqueParaFrutaria {
 		System.out.print("Insira a quantidade adicionada: ");
 		int quantidadeAdicionada = entrada.nextInt();
 		int novoTotalDeItens = quantidadeAtual + quantidadeAdicionada;
-		System.out.println("CONFIRMARDO, Seu novo total é de " + novoTotalDeItens + " itens em estoque.\n");
+		System.out.println("CONFIRMARDO, Seu novo total sera de " + novoTotalDeItens + " itens em estoque.\n");
 		System.out.println("Digite 0 para voltar ao menu princial, ou 1 para encerrar o programa.");
 		retornarAoMenuOuEncerrar();
 	}
@@ -66,7 +66,7 @@ public class controleDeEstoqueParaFrutaria {
 	}
 
 	private static void retirarProdutoDoEstoque() {
-		System.out.print("Insira o Código do Produto:  ");
+		System.out.print("Insira o Codigo do Produto:  ");
 		int codigoDoProduto = entrada.nextInt();
 		bancoDeDados(codigoDoProduto);
 		int quantidadeAtual = quantidadeEmBanco(codigoDoProduto);
@@ -75,7 +75,7 @@ public class controleDeEstoqueParaFrutaria {
 		System.out.print("Insira a quantidade a ser retirada: ");
 		int quantidadeRetirada = entrada.nextInt();
 		int novoTotalDeItens = quantidadeAtual - quantidadeRetirada;
-		System.out.println("CONFIRMARDO, Seu novo total é de " + novoTotalDeItens + " itens em estoque.\n");
+		System.out.println("CONFIRMARDO, Seu novo total e de " + novoTotalDeItens + " itens em estoque.\n");
 		System.out.println("Digite 0 para voltar ao menu princial, ou 1 para encerrar o programa.");
 		retornarAoMenuOuEncerrar();
 	}
@@ -86,7 +86,7 @@ public class controleDeEstoqueParaFrutaria {
 		case 1001:
 			return "Batata-Doce";
 		case 1002:
-			return "Abóbora Galinho";
+			return "Abobora Galinho";
 
 		case 1003:
 			return "Abacaxi da Serra";
@@ -95,7 +95,7 @@ public class controleDeEstoqueParaFrutaria {
 			return "Melancia Vivacia";
 
 		case 1005:
-			return "Manga da Malásia";
+			return "Manga da Malasia";
 
 		}
 		return null;
